@@ -1,0 +1,222 @@
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Header */
+.hero {
+  background-color: #007bff;
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.hero-image img {
+  max-width: 400px;
+}
+
+/* Secciones */
+section {
+  padding: 4rem 2rem;
+}
+
+.introduccion, .proyecto, .accion, .historia, .progreso, .recompensas, .testimonios, .equipo, .faq {
+  background-color: #f8f9fa;
+}
+
+.intro-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro-imagen {
+  max-width: 300px;
+  margin-right: 2rem;
+}
+
+.intro-texto h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.galeria img {
+  max-width: 100%;
+  height: auto;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+.historia-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.frase {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.btn-apoya {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+}
+
+.btn-apoya:hover {
+  background-color: #0056b3;
+}
+
+.barra-container {
+  width: 100%;
+  height: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.barra-progreso {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 10px;
+  text-align: right;
+  padding-right: 1rem;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.recompensas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recompensas li {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+.miembro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.miembro img {
+  max-width: 100px;
+  margin-right: 1rem;
+}
+
+details {
+  margin-bottom: 1rem;
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.redes a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.redes a:hover {
+  color: #e6e6e6;
+}
+
+/* Animaciones */
+.historia-contenido.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.historia-contenido {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s, transform 0.8s;
+}
