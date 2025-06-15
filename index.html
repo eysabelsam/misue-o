@@ -14,12 +14,32 @@
   </header>
 
   <main>
+<section class="historia">
+  <h2>La Historia</h2>
+  <div class="historia-contenido">
+    <img src="img/historia-origen.jpg" alt="Raíces culturales" />
+    <div>
+      <p>Hola, soy Manuel, un migrante de México que ha recorrido un largo camino en busca de un lugar al que pertenezca. Las camisetas deportivas que encontramos en el mercado no cuentan nuestras historias.</p>
+      <p>Por eso, creé <strong>Aioria Sport</strong>, una marca que celebra nuestra herencia. Cada camiseta refleja colores, patrones y símbolos que evocan nuestras raíces.</p>
+      <p>Con tu ayuda, quiero lanzar la primera colección y reunir <strong>$5,000 USD</strong> para producción y distribución. ¡Únete y viste con orgullo tu cultura!</p>
+    </div>
+  </div>
+</section>
 
-    <section class="editable-section">
-      <h2>📌 Título del Proyecto</h2>
-      <button class="edit-btn">Editar</button>
-      <p><strong>Aioria Sport:</strong> camisetas deportivas que reflejan nuestras raíces y tradición.</p>
-    </section>
+    <section class="proyecto">
+  <h2>Diseños que Hablan</h2>
+  <div class="carrusel">
+    <button class="btn-carrusel prev">&#10094;</button>
+    <div class="carrusel-track">
+      <img src="img/diseno1.png" alt="Diseño 1">
+      <img src="img/diseno2.png" alt="Diseño 2">
+      <img src="img/diseno3.png" alt="Diseño 3">
+    </div>
+    <button class="btn-carrusel next">&#10095;</button>
+  </div>
+</section>
+
+      
 
     <section class="editable-section">
       <h2>🎯 Objetivo de Recaudación</h2>
@@ -50,6 +70,22 @@
     </section>
 
   </main>
+<script>
+  const track = document.querySelector('.carrusel-track');
+  const nextBtn = document.querySelector('.btn-carrusel.next');
+  const prevBtn = document.querySelector('.btn-carrusel.prev');
+  let index = 0;
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % track.children.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + track.children.length) % track.children.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  });
+</script>
 
 </body>
 </html>
