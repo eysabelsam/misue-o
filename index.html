@@ -3,89 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aioria Sport – Campaña Kickstarter</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Aioria Sport - Kickstarter</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <header class="preamble">
-    <h1>Aioria Sport</h1>
-    <p>Ropa deportiva con cultura mexicana — Prepárate para un lanzamiento con impacto</p>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="aioria-logo-blanco.png" alt="Logo Aioria Sport" class="logo" />
+      <h1>Aioria Sport</h1>
+      <p class="tagline">Moda que lleva nuestra historia puesta</p>
+      <a href="#recompensas" class="btn-donar">Apóyanos en Kickstarter</a>
+    </div>
   </header>
 
-  <main>
-<section class="historia">
-  <h2>La Historia</h2>
-  <div class="historia-contenido">
-    <img src="img/historia-origen.jpg" alt="Raíces culturales" />
-    <div>
-      <p>Hola, soy Manuel, un migrante de México que ha recorrido un largo camino en busca de un lugar al que pertenezca. Las camisetas deportivas que encontramos en el mercado no cuentan nuestras historias.</p>
-      <p>Por eso, creé <strong>Aioria Sport</strong>, una marca que celebra nuestra herencia. Cada camiseta refleja colores, patrones y símbolos que evocan nuestras raíces.</p>
-      <p>Con tu ayuda, quiero lanzar la primera colección y reunir <strong>$5,000 USD</strong> para producción y distribución. ¡Únete y viste con orgullo tu cultura!</p>
+  <!-- Carrusel de imágenes -->
+  <section id="carrusel" class="carrusel">
+    <div class="slider">
+      <div class="slides">
+        <img src="diseno1.png" alt="Playera edición limitada" />
+        <img src="diseno2.png" alt="Gorra cultural" />
+        <img src="sudadea.jpg" alt="Sudadera con escudo" />
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title">Recompensas</h2>
+  <div class="rewards-container">
+    <div class="reward-card">
+      <img src="diseno1.png" alt="Camiseta edición limitada" />
+      <h3>$60 USD</h3>
+      <p>Recibe una <strong>camiseta de edición limitada</strong>, inspirada en nuestras raíces culturales. Una prenda que te hace sentir que vuelves a casa.</p>
+    </div>
+    <div class="reward-card">
+      <img src="ecompensa2.png" alt="Camiseta y gorra" />
+      <h3>$90 USD</h3>
+      <p>Camiseta de edición limitada <strong>+ gorra del mismo diseño</strong>. Cultura y estilo unidos en un solo paquete.</p>
+    </div>
+    <div class="reward-card">
+      <img src="ecompensa3.png" alt="Pack completo" />
+      <h3>$120 USD</h3>
+      <p>Camiseta de edición limitada + gorra <strong>+ otra camiseta</strong> con diseño complementario. Ideal para regalar o combinar.</p>
     </div>
   </div>
-</section>
 
-    <section class="proyecto">
-  <h2>Diseños que Hablan</h2>
-  <div class="carrusel">
-    <button class="btn-carrusel prev">&#10094;</button>
-    <div class="carrusel-track">
-      <img src="img/diseno1.png" alt="Diseño 1">
-      <img src="img/diseno2.png" alt="Diseño 2">
-      <img src="img/diseno3.png" alt="Diseño 3">
-    </div>
-    <button class="btn-carrusel next">&#10095;</button>
+  <h2 class="section-title">Nuestra Historia</h2>
+
+  <!-- Video de presentación -->
+  <div class="video-container">
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" 
+      title="Video de Aioria Sport" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
-</section>
 
-      
+  <!-- Texto animado con imagen -->
+  <div class="historia-container">
+    <div class="historia-texto">
+      <p class="fade-in">Aioria Sport nace del deseo de vestir con orgullo lo que somos. En un mundo donde la moda muchas veces olvida el origen, nosotros decidimos crear prendas que <strong>rescatan nuestra identidad latina</strong> y la transforman en estilo.</p>
+      <p class="fade-in">Esta marca no solo ofrece ropa. Ofrece una conexión: con tus raíces, con tus valores, con tu historia. Queremos que cada camiseta, cada gorra, cada sudadera que uses de Aioria Sport <strong>te haga sentir que vuelves a casa</strong>.</p>
+      <p class="fade-in">Con esta campaña buscamos financiar nuestra <strong>primera producción</strong> y demostrar que la moda también puede ser una forma de empoderamiento cultural. Apóyanos y sé parte de una comunidad que se viste con propósito.</p>
+    </div>
+    <div class="historia-imagen">
+      <img src="mexico-logo.png" alt="Escudo cultural Aioria" />
+    </div>
+  </div>
 
-    <section class="editable-section">
-      <h2>🎯 Objetivo de Recaudación</h2>
-      <button class="edit-btn">Editar</button>
-      <p>Meta: <em>$5,000 USD</em></p>
-    </section>
+  <!-- Preguntas frecuentes -->
+  <section id="faq">
+    <!-- Se llenará más adelante -->
+  </section>
 
-    <section class="editable-section">
-      <h2>🧵 Historia del Proyecto</h2>
-      <button class="edit-btn">Editar</button>
-      <p>Hola, soy Manuel, un migrante de México... [inserta historia aquí completa]</p>
-    </section>
+  <footer>
+    <p>&copy; 2025 Aioria Sport. Todos los derechos reservados.</p>
+  </footer>
 
-    <section class="editable-section">
-      <h2>🎁 Recompensas</h2>
-      <button class="edit-btn">Editar</button>
-      <ul>
-        <li><strong>$10:</strong> Agradecimiento por correo</li>
-        <li><strong>$25:</strong> 1 playera edición básica</li>
-        <!-- más niveles -->
-      </ul>
-    </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelector(".slides");
+      const images = document.querySelectorAll(".slides img");
+      let index = 0;
 
-    <section class="editable-section">
-      <h2>📣 Llamado a la Acción</h2>
-      <button class="edit-btn">Editar</button>
-      <p>¡Comparte la campaña y hazla crecer!</p>
-    </section>
-
-  </main>
-<script>
-  const track = document.querySelector('.carrusel-track');
-  const nextBtn = document.querySelector('.btn-carrusel.next');
-  const prevBtn = document.querySelector('.btn-carrusel.prev');
-  let index = 0;
-
-  nextBtn.addEventListener('click', () => {
-    index = (index + 1) % track.children.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
-  });
-
-  prevBtn.addEventListener('click', () => {
-    index = (index - 1 + track.children.length) % track.children.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
-  });
-</script>
-
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      }, 5000);  // Intervalo de 5 segundos
+    });
+  </script>
 </body>
 </html>
